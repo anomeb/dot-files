@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.vimrc
+
+# if the files to be tracked are in subdirectories
+!*/vimfiles/autoload
