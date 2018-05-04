@@ -2,7 +2,7 @@ set nocompatible
 syntax on
 set wrap
 set lbr
-set encoding=utf8
+set encoding=utf-8
 set sessionoptions-=blank
 
 call plug#begin('~/vimfiles/plugged')
@@ -29,6 +29,7 @@ Plug 'dkprice/vim-easygrep'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 Plug 'ternjs/tern_for_vim'
+Plug 'tpope/vim-surround'
 
 " Generic Programming Support
 Plug 'honza/vim-snippets'
@@ -147,6 +148,8 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='hybrid'
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 " Syntastic Configuration
 set statusline+=%#warningmsg#
