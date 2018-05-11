@@ -34,7 +34,6 @@ Plug 'tpope/vim-surround'
 " Generic Programming Support
 Plug 'honza/vim-snippets'
 Plug 'Raimondi/delimitMate'
-"Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
 Plug 'tobyS/vmustache'
 Plug 'janko-m/vim-test'
@@ -124,9 +123,6 @@ let g:elite_mode=1
 
 set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in the name properly
 
-"let g:python_host_prog = 'C:\Users\vs\.windows-build-tools\python27'
-"let g:python3_host_prog = 'C:\Users\vs\AppData\Local\Programs\Python\Python36'
-
 " Theme and Styling
 set t_Co=256
 set background=dark
@@ -137,7 +133,6 @@ endif
 
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme spacegray
-" colorscheme spacemacs-theme
 
 let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
