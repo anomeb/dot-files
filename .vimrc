@@ -4,6 +4,7 @@ set wrap
 set lbr
 set encoding=utf-8
 set sessionoptions-=blank
+set incsearch
 
 call plug#begin('~/vimfiles/plugged')
 
@@ -87,7 +88,7 @@ endif
 Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'neovim/node-host', { 'do': 'npm install' }
 Plug 'billyvg/tigris.nvim', { 'do': './install.sh' }
-
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 "Settings
@@ -193,8 +194,10 @@ map <C-m> :TagbarToggle<CR>
 
 "Remove all trailing whitespace by pressing F5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
 nnoremap <Space> <nop>
 let mapleader = "\<Space>"
+
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
