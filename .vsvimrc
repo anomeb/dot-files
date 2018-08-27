@@ -15,3 +15,7 @@ nnoremap <Leader>gf :vsc View.NavigateForward<CR>
 nnoremap <Leader>gr :vsc Refactor.Rename<CR>
 nnoremap <Leader>r :vsc Edit.FindAllReferences<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
+
+"while it is not implemented
+nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
+nnoremap zr :vsc Edit.StopOutlining<CR>
