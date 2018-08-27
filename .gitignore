@@ -4,6 +4,7 @@
 # But not these files...
 !.gitignore
 !.vimrc
+!.vsvimrc
 
 # if the files to be tracked are in subdirectories
 !*/vimfiles/autoload

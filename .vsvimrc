@@ -1,0 +1,17 @@
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+"""""""""""""""""""""""""""""""""""""
+" Mappings configurationn
+"""""""""""""""""""""""""""""""""""""
+
+nnoremap <Space> <nop>
+let mapleader = "\<space>"
+
+nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
+nnoremap <Leader>gf :vsc View.NavigateForward<CR>
+nnoremap <Leader>gr :vsc Refactor.Rename<CR>
+nnoremap <Leader>r :vsc Edit.FindAllReferences<CR>
+map <leader>to :vsc File.CloseAllButThis<CR>
