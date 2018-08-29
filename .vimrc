@@ -6,6 +6,9 @@ set encoding=utf-8
 set sessionoptions-=blank
 set incsearch
 
+" Russian langmap
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
 call plug#begin('~/vimfiles/plugged')
 
 " Utility

@@ -3,6 +3,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
@@ -12,8 +14,8 @@ let mapleader = "\<space>"
 
 nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
 nnoremap <Leader>gf :vsc View.NavigateForward<CR>
-nnoremap <Leader>gr :vsc Refactor.Rename<CR>
-nnoremap <Leader>r :vsc Edit.FindAllReferences<CR>
+nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
+nnoremap <Leader>r :vsc Refactor.Rename<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 
 "while it is not implemented
