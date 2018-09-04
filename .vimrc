@@ -44,6 +44,7 @@ Plug 'janko-m/vim-test'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'vim-syntastic/syntastic'
 Plug 'neomake/neomake'
+Plug 'OmniSharp/omnisharp-vim'
 
 " Mapping
 Plug 'https://github.com/tpope/vim-unimpaired'
@@ -205,6 +206,8 @@ nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>rr :! %<CR>
+nnoremap <leader>rs :silent %<CR>
 
 let &wildcharm = &wildchar
 cnoremap <C-j> <DOWN>
