@@ -15,6 +15,7 @@ let mapleader = "\<space>"
 nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
 nnoremap <Leader>gf :vsc View.NavigateForward<CR>
 nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
+nnoremap <Leader>gi :vsc Edit.GoToImplementation<CR>
 nnoremap <Leader>r :vsc Refactor.Rename<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 

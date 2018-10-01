@@ -44,6 +44,8 @@ Plug 'janko-m/vim-test'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'vim-syntastic/syntastic'
 Plug 'neomake/neomake'
+
+"TEMP
 Plug 'OmniSharp/omnisharp-vim'
 
 " Mapping
@@ -163,6 +165,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
 "YouCompleteMe
+"Compile command
+"cd C:\Users\vs\vimfiles\plugged\YouCompleteMe
+"python install.py --cs-completer --clang-completer --js-completer
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 "javascript
@@ -207,10 +212,40 @@ nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>rr :! %<CR>
-nnoremap <leader>rs :silent %<CR>
+
+"doesn't work
+nnoremap <leader>rs :silent !%<CR>
 
 let &wildcharm = &wildchar
 cnoremap <C-j> <DOWN>
 cnoremap <C-k> <UP>
 
 tnoremap <Esc> <C-\><C-n>
+
+"tabs
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+
+"Omnisharp settings
+"let g:OmniSharp_start_server = 1
+"let g:OmniSharp_server_config_name = 'omnisharp.json'
+autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
+
+"fix for easytags lags
+set regexpengine=0
+
+
+function! MakeSolution() abort
+  let makeprg = 'msbuild /nologo /v:q /property:GenerateFullPaths=true /clp:ErrorsOnly '
+  let sln = fnamemodify(OmniSharp#FindSolution(), ':.')
+  echomsg makeprg . sln
+  call asyncdo#run(1, makeprg . sln)
+endfunction
+
+nnoremap <silent> <buffer> <leader>mk :call MakeSolution()<CR>
