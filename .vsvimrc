@@ -29,6 +29,7 @@ nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
 nnoremap <Leader>gi :vsc Edit.GoToImplementation<CR>
 nnoremap <Leader>r :vsc Refactor.Rename<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
+map <leader>tk :vsc Window.KeepTabOpen<CR>
 
 "while it is not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
