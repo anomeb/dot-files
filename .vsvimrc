@@ -28,6 +28,7 @@ nnoremap <Leader>gf :vsc View.NavigateForward<CR>
 nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
 nnoremap <Leader>gi :vsc Edit.GoToImplementation<CR>
 nnoremap <Leader>r :vsc Refactor.Rename<CR>
+nnoremap <leader>nh :nohl<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 map <leader>tk :vsc Window.KeepTabOpen<CR>
 

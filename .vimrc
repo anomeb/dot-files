@@ -212,6 +212,7 @@ nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>rr :! %<CR>
+nnoremap <leader>nh :nohl<CR>
 
 "doesn't work
 nnoremap <leader>rs :silent !%<CR>
