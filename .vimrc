@@ -213,6 +213,11 @@ nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>rr :! %<CR>
 nnoremap <leader>nh :nohl<CR>
+nnoremap <leader>c "+y
+nnoremap <leader>v "+p
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>w :w<CR>
 
 "doesn't work
 nnoremap <leader>rs :silent !%<CR>

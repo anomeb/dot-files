@@ -23,6 +23,12 @@ nnoremap td  :tabclose<CR>
 nnoremap <Space> <nop>
 let mapleader = "\<space>"
 
+nnoremap <leader>c "+y
+nnoremap <leader>v "+p
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>w :w<CR>
+
 nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
 nnoremap <Leader>gf :vsc View.NavigateForward<CR>
 nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
