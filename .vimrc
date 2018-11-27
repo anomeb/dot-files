@@ -213,10 +213,21 @@ nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>rr :! %<CR>
 nnoremap <leader>nh :nohl<CR>
+
+"copy paste
 nnoremap <leader>c "+y
+vnoremap <leader>c "+y
+
 nnoremap <leader>v "+p
+vnoremap <leader>v "+p
+
 nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+
 nnoremap <leader>p "+p
+vnoremap <leader>p "+p
+
+
 nnoremap <leader>w :w<CR>
 
 "doesn't work
