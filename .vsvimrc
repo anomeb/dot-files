@@ -23,10 +23,20 @@ nnoremap td  :tabclose<CR>
 nnoremap <Space> <nop>
 let mapleader = "\<space>"
 
+"copy paste
 nnoremap <leader>c "+y
+vnoremap <leader>c "+y
+
 nnoremap <leader>v "+p
+vnoremap <leader>v "+p
+
 nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+
 nnoremap <leader>p "+p
+vnoremap <leader>p "+p
+
+
 nnoremap <leader>w :w<CR>
 
 nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
