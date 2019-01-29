@@ -29,6 +29,7 @@ Plug 'benmills/vimux'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'gilsondev/searchtasks.vim'
 Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'tpope/vim-dispatch'
 Plug 'dkprice/vim-easygrep'
 Plug 'xolox/vim-easytags'
@@ -47,7 +48,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'neomake/neomake'
 
 "TEMP
-Plug 'OmniSharp/omnisharp-vim'
+"Plug 'OmniSharp/omnisharp-vim'
 
 " Mapping
 Plug 'https://github.com/tpope/vim-unimpaired'
@@ -109,6 +110,7 @@ call plug#end()
 syntax on
 filetype plugin indent on
 set foldmethod=syntax
+set foldlevel=99
 
 set history=200
 
@@ -166,13 +168,22 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 
-"Plug 'othree/javascript-libraries-syntax.vim'
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+let g:syntastic_html_tidy_ignore_errors = [
+    \"trimming empty <i>",
+    \"trimming empty <span>",
+    \"<input> proprietary attribute \"autocomplete\"",
+    \"proprietary attribute \"role\"",
+    \"proprietary attribute \"hidden\"",
+\]
+
 let g:used_javascript_libs = 'jquery,underscore,underscore,backbone,prelude,angularjs,angularui,angularuirouter,react,flux,requirejs,sugar,jasmine,chai,handlebars,ramda,vue,d3,tape'
 "YouCompleteMe
 "Compile command
@@ -208,6 +219,10 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 " netrw
 let g:netrw_banner = 0
 
+"tsuquyomi
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
@@ -220,7 +235,9 @@ nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nnoremap <Space> <nop>
 let mapleader = "\<Space>"
 
-nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+map <leader>, :FZF<CR>
+
+nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
