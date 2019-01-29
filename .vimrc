@@ -20,8 +20,9 @@ Plug 'ervandew/supertab'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'SirVer/ultisnips'
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'benmills/vimux'
@@ -95,6 +96,13 @@ Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'neovim/node-host', { 'do': 'npm install' }
 Plug 'billyvg/tigris.nvim', { 'do': './install.sh' }
 Plug 'ryanoasis/vim-devicons'
+
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
+
+Plug 'LucHermitte/lh-vim-lib'
+Plug 'LucHermitte/local_vimrc'
 call plug#end()
 
 "Settings
@@ -164,6 +172,8 @@ let g:syntastic_check_on_open = 1
 
 let g:syntastic_javascript_checkers = ['eslint']
 
+"Plug 'othree/javascript-libraries-syntax.vim'
+let g:used_javascript_libs = 'jquery,underscore,underscore,backbone,prelude,angularjs,angularui,angularuirouter,react,flux,requirejs,sugar,jasmine,chai,handlebars,ramda,vue,d3,tape'
 "YouCompleteMe
 "Compile command
 "cd C:\Users\vs\vimfiles\plugged\YouCompleteMe
@@ -194,6 +204,9 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsListSnippets = "<c-tab>"
 let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+
+" netrw
+let g:netrw_banner = 0
 
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
