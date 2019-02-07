@@ -24,6 +24,7 @@ nnoremap <Space> <nop>
 let mapleader = "\<space>"
 
 "copy paste
+"-----
 nnoremap <leader>c "+y
 vnoremap <leader>c "+y
 
@@ -35,7 +36,7 @@ vnoremap <leader>y "+y
 
 nnoremap <leader>p "+p
 vnoremap <leader>p "+p
-
+"-----
 
 nnoremap <leader>w :w<CR>
 
@@ -51,3 +52,6 @@ map <leader>tk :vsc Window.KeepTabOpen<CR>
 "while it is not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
 nnoremap zr :vsc Edit.StopOutlining<CR>
+
+nnoremap <C-o> :vsc View.NavigateBackward<CR>
+nnoremap <C-i> :vsc View.NavigateForward<CR>
