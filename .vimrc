@@ -264,8 +264,8 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>rs :silent !%<CR>
 
 let &wildcharm = &wildchar
-cnoremap <C-j> <DOWN>
-cnoremap <C-k> <UP>
+cnoremap <C-n> <DOWN>
+cnoremap <C-p> <UP>
 
 tnoremap <Esc> <C-\><C-n>
 
@@ -278,6 +278,12 @@ nnoremap tt  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
+
+"windows
+map <silent> <C-j> :wincmd j<CR>
+map <silent> <C-k> :wincmd k<CR>
+map <silent> <C-h> :wincmd h<CR>
+map <silent> <C-l> :wincmd l<CR>
 
 "Omnisharp settings
 "let g:OmniSharp_start_server = 1

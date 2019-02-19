@@ -3,8 +3,6 @@ set hlsearch
 set ignorecase
 set smartcase
 
-set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
-
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
@@ -44,14 +42,31 @@ nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
 nnoremap <Leader>gf :vsc View.NavigateForward<CR>
 nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
 nnoremap <Leader>gi :vsc Edit.GoToImplementation<CR>
-nnoremap <Leader>r :vsc Refactor.Rename<CR>
+nnoremap <Leader>rr :vsc Refactor.Rename<CR>
 nnoremap <leader>nh :nohl<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 map <leader>tk :vsc Window.KeepTabOpen<CR>
 
-"while it is not implemented
+"while folding levels are not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
 nnoremap zr :vsc Edit.StopOutlining<CR>
 
 nnoremap <C-o> :vsc View.NavigateBackward<CR>
 nnoremap <C-i> :vsc View.NavigateForward<CR>
+
+nnoremap <Leader>q :vsc Window.ActivateQuickLaunch<CR>
+
+nnoremap <Leader>ur :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
+
+nnoremap <Leader>rm :vsc ReSharper.ReSharper_Move<CR>
+nnoremap <Leader>. :vsc ReSharper_AltEnter<CR>
+vnoremap <Leader>rem :vsc ReSharper.ReSharper_ExtractMethod<CR>
+nnoremap <Leader>rei :vsc ReSharper.ReSharper_ExtractInterface<CR>
+nnoremap <Leader>rec :vsc ReSharper.ReSharper_ExtractClass<CR>
+nnoremap <Leader>res :vsc ReSharper.ReSharper_ExtractSuperclass<CR>
+
+"windows
+map <silent> <C-j> :wincmd j<CR>
+map <silent> <C-k> :wincmd k<CR>
+map <silent> <C-h> :wincmd h<CR>
+map <silent> <C-l> :wincmd l<CR>
