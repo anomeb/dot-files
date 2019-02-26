@@ -38,6 +38,7 @@ vnoremap <leader>p "+p
 
 nnoremap <leader>w :w<CR>
 
+"VS commands
 nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
 nnoremap <Leader>gf :vsc View.NavigateForward<CR>
 nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
@@ -46,6 +47,7 @@ nnoremap <Leader>rr :vsc Refactor.Rename<CR>
 nnoremap <leader>nh :nohl<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 map <leader>tk :vsc Window.KeepTabOpen<CR>
+map <leader>, :vsc Edit.GoToAll<CR>
 
 "while folding levels are not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
