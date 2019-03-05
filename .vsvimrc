@@ -2,6 +2,7 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+set number
 
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
@@ -48,6 +49,7 @@ nnoremap <leader>nh :nohl<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 map <leader>tk :vsc Window.KeepTabOpen<CR>
 map <leader>, :vsc Edit.GoToAll<CR>
+map <leader>, :vsc Edit.NavigateTo<CR>
 
 "while folding levels are not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
