@@ -60,6 +60,8 @@ nnoremap <C-i> :vsc View.NavigateForward<CR>
 
 nnoremap <Leader>q :vsc Window.ActivateQuickLaunch<CR>
 
+nnoremap <Leader>Rt :vsc ReSharper_ToggleSuspended<CR>
+
 nnoremap <Leader>ur :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
 
 nnoremap <Leader>rm :vsc ReSharper.ReSharper_Move<CR>
