@@ -5,6 +5,7 @@ set lbr
 set encoding=utf-8
 set sessionoptions-=blank
 set incsearch
+set rnu
 
 " Russian langmap
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
