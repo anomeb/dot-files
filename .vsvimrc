@@ -22,11 +22,9 @@ nnoremap td  :tabclose<CR>
 nnoremap <Space> <nop>
 let mapleader = "\<space>"
 
-"copy paste
-"-----
-nnoremap <leader>c "+y
-vnoremap <leader>c "+y
-
+"""""""""""""""""""""""""""""""""""""
+"Copy paste to system clipboard
+"""""""""""""""""""""""""""""""""""""
 nnoremap <leader>v "+p
 vnoremap <leader>v "+p
 
@@ -35,43 +33,51 @@ vnoremap <leader>y "+y
 
 nnoremap <leader>p "+p
 vnoremap <leader>p "+p
-"-----
+"""""""""""""""""""""""""""""""""""""
 
 nnoremap <leader>w :w<CR>
 
+"""""""""""""""""""""""""""""""""""""
 "VS commands
-nnoremap <Leader>gb :vsc View.NavigateBackward<CR>
-nnoremap <Leader>gf :vsc View.NavigateForward<CR>
-nnoremap <Leader>gr :vsc Edit.FindAllReferences<CR>
-nnoremap <Leader>gi :vsc Edit.GoToImplementation<CR>
-nnoremap <Leader>rr :vsc Refactor.Rename<CR>
+"""""""""""""""""""""""""""""""""""""
+nnoremap <leader>gb :vsc View.NavigateBackward<CR>
+nnoremap <leader>gf :vsc View.NavigateForward<CR>
+nnoremap <leader>gr :vsc Edit.FindAllReferences<CR>
+nnoremap <leader>gi :vsc Edit.GoToImplementation<CR>
+nnoremap <leader>rr :vsc Refactor.Rename<CR>
 nnoremap <leader>nh :nohl<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 map <leader>tk :vsc Window.KeepTabOpen<CR>
 map <leader>, :vsc Edit.GoToAll<CR>
 map <leader>, :vsc Edit.NavigateTo<CR>
+nnoremap <C-o> :vsc View.NavigateBackward<CR>
+nnoremap <C-i> :vsc View.NavigateForward<CR>
+nnoremap <leader>q :vsc Window.ActivateQuickLaunch<CR>
+vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
+vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 
 "while folding levels are not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
 nnoremap zr :vsc Edit.StopOutlining<CR>
+"""""""""""""""""""""""""""""""""""""
+"Resharper
+"""""""""""""""""""""""""""""""""""""
 
-nnoremap <C-o> :vsc View.NavigateBackward<CR>
-nnoremap <C-i> :vsc View.NavigateForward<CR>
+nnoremap <leader>Rt :vsc ReSharper_ToggleSuspended<CR>
 
-nnoremap <Leader>q :vsc Window.ActivateQuickLaunch<CR>
+nnoremap <leader>ur :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
 
-nnoremap <Leader>Rt :vsc ReSharper_ToggleSuspended<CR>
+nnoremap <leader>rm :vsc ReSharper.ReSharper_Move<CR>
+nnoremap <leader>. :vsc ReSharper_AltEnter<CR>
+vnoremap <leader>rem :vsc ReSharper.ReSharper_ExtractMethod<CR>
+nnoremap <leader>rei :vsc ReSharper.ReSharper_ExtractInterface<CR>
+nnoremap <leader>rec :vsc ReSharper.ReSharper_ExtractClass<CR>
+nnoremap <leader>res :vsc ReSharper.ReSharper_ExtractSuperclass<CR>
 
-nnoremap <Leader>ur :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
+"""""""""""""""""""""""""""""""""""""
+"Windows
+"""""""""""""""""""""""""""""""""""""
 
-nnoremap <Leader>rm :vsc ReSharper.ReSharper_Move<CR>
-nnoremap <Leader>. :vsc ReSharper_AltEnter<CR>
-vnoremap <Leader>rem :vsc ReSharper.ReSharper_ExtractMethod<CR>
-nnoremap <Leader>rei :vsc ReSharper.ReSharper_ExtractInterface<CR>
-nnoremap <Leader>rec :vsc ReSharper.ReSharper_ExtractClass<CR>
-nnoremap <Leader>res :vsc ReSharper.ReSharper_ExtractSuperclass<CR>
-
-"windows
 map <silent> <C-j> :wincmd j<CR>
 map <silent> <C-k> :wincmd k<CR>
 map <silent> <C-h> :wincmd h<CR>
