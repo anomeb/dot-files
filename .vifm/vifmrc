@@ -460,3 +460,6 @@ nnoremap <f8> :delete<cr>
 " Block particular shortcut
 "
 " nnoremap <left> <nop>
+
+set relativenumber
+colorscheme zenburn_1

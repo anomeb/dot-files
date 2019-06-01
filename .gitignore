@@ -7,8 +7,10 @@
 !.nvimrc
 !.vsvimrc
 !vifmrc
+!zenburn_1.vifm
 
 !.vifm/
+!.vifm/colors
 
 # if the files to be tracked are in subdirectories
 !*/vimfiles/autoload
