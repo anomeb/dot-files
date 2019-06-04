@@ -10,104 +10,6 @@ set rnu
 " Russian langmap
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
-call plug#begin('~/vimfiles/plugged')
-
-" Utility
-Plug 'Valloric/YouCompleteMe'
-Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar'
-Plug 'hushicai/tagbar-javascript.vim'
-Plug 'ervandew/supertab'
-Plug 'vim-scripts/BufOnly.vim'
-Plug 'wesQ3/vim-windowswap'
-Plug 'SirVer/ultisnips'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"Plug 'junegunn/fzf.vim'
-"Plug 'junegunn/fzf'
-Plug 'godlygeek/tabular'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'benmills/vimux'
-Plug 'jeetsukumaran/vim-buffergator'
-Plug 'gilsondev/searchtasks.vim'
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'tpope/vim-dispatch'
-Plug 'dkprice/vim-easygrep'
-Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc'
-Plug 'ternjs/tern_for_vim'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-
-" Generic Programming Support
-Plug 'honza/vim-snippets'
-Plug 'Raimondi/delimitMate'
-Plug 'tomtom/tcomment_vim'
-Plug 'tobyS/vmustache'
-Plug 'janko-m/vim-test'
-Plug 'maksimr/vim-jsbeautify'
-Plug 'vim-syntastic/syntastic'
-Plug 'neomake/neomake'
-
-"TEMP
-"Plug 'OmniSharp/omnisharp-vim'
-
-" Mapping
-Plug 'https://github.com/tpope/vim-unimpaired'
-
-" Git Support
-Plug 'kablamo/vim-git-log'
-Plug 'gregsexton/gitv'
-Plug 'tpope/vim-fugitive'
-"Plug 'jaxbot/github-issues.vim'
-
-" PHP Support
-Plug 'phpvim/phpcd.vim'
-Plug 'tobyS/pdv'
-
-" Theme / Interface
-Plug 'vim-scripts/AnsiEsc.vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'sjl/badwolf'
-Plug 'tomasr/molokai'
-Plug 'morhetz/gruvbox'
-Plug 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-Plug 'junegunn/limelight.vim'
-Plug 'mkarmona/colorsbox'
-Plug 'romainl/Apprentice'
-Plug 'Lokaltog/vim-distinguished'
-Plug 'chriskempson/base16-vim'
-Plug 'w0ng/vim-hybrid'
-Plug 'AlessandroYorba/Sierra'
-Plug 'daylerees/colour-schemes'
-Plug 'effkay/argonaut.vim'
-Plug 'ajh17/Spacegray.vim'
-Plug 'atelierbram/Base2Tone-vim'
-Plug 'colepeters/spacemacs-theme.vim'
-" Other
-if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-Plug 'https://github.com/pangloss/vim-javascript'
-Plug 'neovim/node-host', { 'do': 'npm install' }
-Plug 'billyvg/tigris.nvim', { 'do': './install.sh' }
-Plug 'ryanoasis/vim-devicons'
-
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'Quramy/tsuquyomi'
-
-Plug 'LucHermitte/lh-vim-lib'
-Plug 'LucHermitte/local_vimrc'
-call plug#end()
-
 "Settings
 syntax on
 filetype plugin indent on
@@ -151,86 +53,13 @@ if (has("termguicolors"))
 endif
 
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme spacegray
-
-let g:spacegray_underline_search = 1
-let g:spacegray_italicize_comments = 1
-
-" Vim-Airline Configuration
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme='hybrid'
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-
-" Syntastic Configuration
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_javascript_checkers = ['eslint']
-
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
-let g:syntastic_html_tidy_ignore_errors = [
-    \"trimming empty <i>",
-    \"trimming empty <span>",
-    \"<input> proprietary attribute \"autocomplete\"",
-    \"proprietary attribute \"role\"",
-    \"proprietary attribute \"hidden\"",
-\]
-
-let g:used_javascript_libs = 'jquery,underscore,underscore,backbone,prelude,angularjs,angularui,angularuirouter,react,flux,requirejs,sugar,jasmine,chai,handlebars,ramda,vue,d3,tape'
-"YouCompleteMe
-"Compile command
-"cd C:\Users\vs\vimfiles\plugged\YouCompleteMe
-"python install.py --cs-completer --clang-completer --js-completer
-let g:ycm_autoclose_preview_window_after_completion = 1
-
-"javascript
-augroup javascript_folding
-    au!
-    au FileType javascript setlocal foldmethod=syntax
-augroup END
-
-let g:tigris#enabled = 1
-
-let g:EasyGrepWindow = 0
-
-" Vim-Supertab Configuration
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsListSnippets = "<c-tab>"
-let g:UltiSnipsJumpForwardTrigger = "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 
 " netrw
 let g:netrw_banner = 0
 
-"tsuquyomi
-let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi']
-
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
-map <C-n> :NERDTreeToggle<CR>
-map <C-m> :TagbarToggle<CR>
-
 "Remove all trailing whitespace by pressing F5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
@@ -287,10 +116,6 @@ map <silent> <C-k> :wincmd k<CR>
 map <silent> <C-h> :wincmd h<CR>
 map <silent> <C-l> :wincmd l<CR>
 
-"Omnisharp settings
-"let g:OmniSharp_start_server = 1
-"let g:OmniSharp_server_config_name = 'omnisharp.json'
-autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
 
 "fix for easytags lags
 set regexpengine=0

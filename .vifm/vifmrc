@@ -11,8 +11,8 @@
 " If you would like to use another vi clone such as Elvis or Vile
 " you will need to change this setting.
 
-" set vicmd=vim
-set vicmd=nvim
+set vicmd=vim
+" set vicmd=nvim
 " set vicmd=elvis\ -G\ termcap
 " set vicmd=vile
 
@@ -462,4 +462,4 @@ nnoremap <f8> :delete<cr>
 " nnoremap <left> <nop>
 
 set relativenumber
-colorscheme zenburn_1
+"colorscheme zenburn_1
