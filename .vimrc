@@ -6,6 +6,8 @@ set encoding=utf-8
 set sessionoptions-=blank
 set incsearch
 set rnu
+set hlsearch
+colorscheme pablo
 
 " Russian langmap
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
@@ -45,14 +47,8 @@ let g:elite_mode=1
 set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in the name properly
 
 " Theme and Styling
-set t_Co=256
-set background=dark
-
-if (has("termguicolors"))
-    set termguicolors
-endif
-
-let base16colorspace=256  " Access colors present in 256 colorspace
+"set t_Co=256
+"set background=dark
 
 " netrw
 let g:netrw_banner = 0
