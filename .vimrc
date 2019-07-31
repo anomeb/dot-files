@@ -94,8 +94,6 @@ let &wildcharm = &wildchar
 cnoremap <C-n> <DOWN>
 cnoremap <C-p> <UP>
 
-tnoremap <Esc> <C-\><C-n>
-
 "tabs
 nnoremap th  :tabfirst<CR>
 nnoremap tk  :tabnext<CR>

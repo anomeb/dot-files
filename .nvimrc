@@ -62,7 +62,7 @@ Plug 'tpope/vim-fugitive'
 "Plug 'jaxbot/github-issues.vim'
 
 " PHP Support
-Plug 'phpvim/phpcd.vim'
+"Plug 'phpvim/phpcd.vim'
 Plug 'tobyS/pdv'
 
 " Theme / Interface
