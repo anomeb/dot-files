@@ -40,7 +40,7 @@ nnoremap <leader>gf :vsc View.NavigateForward<CR>
 nnoremap <leader>gr :vsc Edit.FindAllReferences<CR>
 nnoremap <leader>gi :vsc Edit.GoToImplementation<CR>
 nnoremap <leader>rr :vsc Refactor.Rename<CR>
-nnoremap <leader>nh :nohl<CR>
+nnoremap <leader>h :nohl<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 map <leader>tk :vsc Window.KeepTabOpen<CR>
 map <leader>, :vsc Edit.GoToAll<CR>
