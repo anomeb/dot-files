@@ -22,7 +22,7 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 "Plug 'junegunn/fzf'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
