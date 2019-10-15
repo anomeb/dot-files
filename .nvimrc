@@ -25,7 +25,7 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 "Plug 'junegunn/fzf'
 Plug 'godlygeek/tabular'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -247,7 +247,7 @@ nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>rr :! %<CR>
-nnoremap <leader>nh :nohl<CR>
+nnoremap <leader>h :nohl<CR>
 
 "copy paste
 nnoremap <leader>c "+y

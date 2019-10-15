@@ -22,20 +22,15 @@ nnoremap td  :tabclose<CR>
 nnoremap <Space> <nop>
 let mapleader = "\<space>"
 
+nnoremap <leader>w :w<CR>
 """""""""""""""""""""""""""""""""""""
 "Copy paste to system clipboard
 """""""""""""""""""""""""""""""""""""
-nnoremap <leader>v "+p
-vnoremap <leader>v "+p
-
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
 
 nnoremap <leader>p "+p
 vnoremap <leader>p "+p
-"""""""""""""""""""""""""""""""""""""
-
-nnoremap <leader>w :w<CR>
 
 """""""""""""""""""""""""""""""""""""
 "VS commands
@@ -45,7 +40,7 @@ nnoremap <leader>gf :vsc View.NavigateForward<CR>
 nnoremap <leader>gr :vsc Edit.FindAllReferences<CR>
 nnoremap <leader>gi :vsc Edit.GoToImplementation<CR>
 nnoremap <leader>rr :vsc Refactor.Rename<CR>
-nnoremap <leader>nh :nohl<CR>
+nnoremap <leader>h :nohl<CR>
 map <leader>to :vsc File.CloseAllButThis<CR>
 map <leader>tk :vsc Window.KeepTabOpen<CR>
 map <leader>, :vsc Edit.GoToAll<CR>
@@ -59,14 +54,19 @@ vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 "while folding levels are not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
 nnoremap zr :vsc Edit.StopOutlining<CR>
+
+nnoremap [e :vsc View.PreviousError<CR>
+nnoremap ]e :vsc View.NextError<CR>
+nnoremap [l :vsc Edit.GoToPrevLocation<CR>
+nnoremap ]l :vsc Edit.GoToNextLocation<CR>
+
+nnoremap <leader>f :vsc View.FullScreen<CR>
+
 """""""""""""""""""""""""""""""""""""
 "Resharper
 """""""""""""""""""""""""""""""""""""
-
 nnoremap <leader>Rt :vsc ReSharper_ToggleSuspended<CR>
-
 nnoremap <leader>ur :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
-
 nnoremap <leader>rm :vsc ReSharper.ReSharper_Move<CR>
 nnoremap <leader>. :vsc ReSharper_AltEnter<CR>
 vnoremap <leader>rem :vsc ReSharper.ReSharper_ExtractMethod<CR>
@@ -77,8 +77,7 @@ nnoremap <leader>res :vsc ReSharper.ReSharper_ExtractSuperclass<CR>
 """""""""""""""""""""""""""""""""""""
 "Windows
 """""""""""""""""""""""""""""""""""""
-
-map <silent> <C-j> :wincmd j<CR>
-map <silent> <C-k> :wincmd k<CR>
-map <silent> <C-h> :wincmd h<CR>
-map <silent> <C-l> :wincmd l<CR>
+map <C-j> :wincmd j<CR>
+map <C-k> :wincmd k<CR>
+map <C-h> :wincmd h<CR>
+map <C-l> :wincmd l<CR>

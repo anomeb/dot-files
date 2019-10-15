@@ -69,7 +69,7 @@ nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>rr :! %<CR>
-nnoremap <leader>nh :nohl<CR>
+nnoremap <leader>h :nohl<CR>
 
 "copy paste
 nnoremap <leader>c "+y
