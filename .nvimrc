@@ -38,6 +38,7 @@ Plug 'xolox/vim-misc'
 Plug 'ternjs/tern_for_vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'skanehira/translate.vim'
 
 " Generic Programming Support
 Plug 'honza/vim-snippets'
