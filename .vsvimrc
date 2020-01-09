@@ -50,6 +50,7 @@ nnoremap <C-i> :vsc View.NavigateForward<CR>
 nnoremap <leader>q :vsc Window.ActivateQuickLaunch<CR>
 vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
+nnoremap g/f :vsc Edit.GoToFile<CR>
 
 "while folding levels are not implemented
 nnoremap zm :vsc Edit.CollapsetoDefinitions<CR>
