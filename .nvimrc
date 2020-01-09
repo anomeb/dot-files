@@ -15,6 +15,7 @@ call plug#begin('~/vimfiles/plugged')
 "AutoCompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'Valloric/YouCompleteMe'
+Plug 'sheerun/vim-polyglot'
 
 " Utility
 Plug 'scrooloose/nerdtree'

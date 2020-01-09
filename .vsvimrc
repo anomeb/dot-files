@@ -2,7 +2,7 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-set nonumber
+set relativenumber
 
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
