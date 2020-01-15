@@ -62,6 +62,8 @@ Plug 'kablamo/vim-git-log'
 Plug 'gregsexton/gitv'
 Plug 'tpope/vim-fugitive'
 Plug 'cedarbaum/fugitive-azure-devops.vim'
+Plug 'idanarye/vim-merginal'
+
 "Plug 'jaxbot/github-issues.vim'
 
 " PHP Support
