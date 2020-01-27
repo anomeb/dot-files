@@ -215,6 +215,7 @@ map <leader>, :FZF<CR>
 nnoremap <leader>gg :G<CR>10<C-w>_
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gm :MerginalToggle<CR>
+nnoremap <leader>gp :!git push<CR>
 nnoremap <leader>rr :! %<CR>
 nnoremap <leader>h :nohl<CR>
 
