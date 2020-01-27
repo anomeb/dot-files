@@ -212,9 +212,10 @@ let mapleader = "\<Space>"
 
 map <leader>, :FZF<CR>
 
-nnoremap <leader>gg :G<CR>10<C-w>_
+nnoremap <leader>gg :G<CR>10<C-w>_4j
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gm :MerginalToggle<CR>
+nnoremap <leader>wp :w<CR><leader>gp
 nnoremap <leader>gp :!git push<CR>
 nnoremap <leader>rr :! %<CR>
 nnoremap <leader>h :nohl<CR>
