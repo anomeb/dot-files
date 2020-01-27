@@ -64,10 +64,6 @@ let mapleader = "\<Space>"
 
 map <leader>, :FZF<CR>
 
-nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>rr :! %<CR>
 nnoremap <leader>h :nohl<CR>
 
