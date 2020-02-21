@@ -217,6 +217,7 @@ nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gm :MerginalToggle<CR>
 nnoremap <leader>gwp :wq<CR>:!git push<CR>
 nnoremap <leader>gp :!git push<CR>
+nnoremap <leader>gl :!git pull<CR>
 nnoremap <leader>rr :! %<CR>
 nnoremap <leader>h :nohl<CR>
 
@@ -378,8 +379,8 @@ omap if <Plug>(coc-funcobj-i)
 omap af <Plug>(coc-funcobj-a)
 
 " Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
-nmap <silent> <C-d> <Plug>(coc-range-select)
-xmap <silent> <C-d> <Plug>(coc-range-select)
+nmap <silent> <C-s> <Plug>(coc-range-select)
+xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
